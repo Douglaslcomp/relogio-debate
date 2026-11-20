@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: white;
+    color: #111;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.tempos, .controles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    padding: 14px 25px;
+    background: white;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eee;
+}
+
+.ativo {
+    background: #222;
+    color: white;
+}
+
+.ativo:hover {
+    background: #333;
+}
+
+.relogio {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.relogio p {
+    font-size: 20px;
+    color: #555;
+}
+
+#contador {
+    font-size: clamp(100px, 20vw, 260px);
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -8px;
+}
+
+#contador.atencao {
+    color: #d97706;
+}
+
+#contador.alerta {
+    color: #c62828;
+}
+
+.barra {
+    width: 80%;
+    height: 10px;
+    background: #e5e5e5;
+    margin: 20px auto;
+}
+
+#progresso {
+    width: 100%;
+    height: 100%;
+    background: #222;
+}
+
+#situacao {
+    min-height: 25px;
+}
